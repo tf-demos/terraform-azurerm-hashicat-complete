@@ -1,21 +1,3 @@
-terraform {
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "4.9.0"
-    }
-  }
-}
-
-resource "azurerm_resource_group" "myresourcegroup" {
-  name     = "${var.prefix}-demo"
-  location = var.location
-
-  tags = {
-    environment = "Production"
-  }
-}
-
 resource "azurerm_virtual_network" "vnet" {
   name                = "${var.prefix}-vnet"
   location            = azurerm_resource_group.myresourcegroup.location

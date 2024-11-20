@@ -9,8 +9,9 @@ The whole Hashicat app with all the configurations in a single dir/repo. Intende
 - `catapp_ip` : front end public IP of the App GW.
 
 ## Resources created:
-### Networking:
 - Resource Group: for all the resources to be used in the Hashicat demo app
+
+### Networking:
 - Virtual Network
 - Subnet for the VMs
 - Subnet for Application Gateways
