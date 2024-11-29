@@ -46,7 +46,7 @@ module "hashicat-compute" {
 
 module "hashicat-app-gateway" {
   source                = "app.terraform.io/r2-org/hashicat-app-gateway/azurerm"
-  version               = "0.0.1"
+  version               = "0.0.2"
   prefix                = var.prefix
   location              = var.location
   resource_group_name   = module.hashicat-networking.resource_group_name
