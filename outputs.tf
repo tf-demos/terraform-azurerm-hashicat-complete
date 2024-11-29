@@ -1,7 +1,7 @@
-output "catapp_url" {
-  value = "http://${azurerm_public_ip.catapp-pip.fqdn}"
+output "app_url" {
+  value = "http://${module.hashicat-app-gateway.catapp_url}"
 }
 
-output "catapp_ip" {
-  value = "http://${azurerm_public_ip.catapp-pip.ip_address}"
+output "app_ip" {
+  value = "http://${module.hashicat-app-gateway.catapp_ip}"
 }

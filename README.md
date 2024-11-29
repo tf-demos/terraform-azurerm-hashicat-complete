@@ -3,14 +3,17 @@ The whole Hashicat app with all the configurations in a single dir/repo. Intende
 
 ## Required Inputs:
 - `prefix`: a memorable prefix to be included in the name of most resources. E.g. 'ricardo'
+- `vault_addr`: the URL of a Vault cluster with the secrets to be consumed by the compute module.
+- `vault_app_token`: a service token to authenticate the web app.
 
 ## Outputs:
-- `catapp_url`: FQDN associated to the front end public IP of the App GW.
-- `catapp_ip` : front end public IP of the App GW.
+- `app_url`: FQDN associated to the front end public IP of the App GW.
+- `app_ip` : front end public IP of the App GW.
 
 ## Resources created:
 - Resource Group: for all the resources to be used in the Hashicat demo app
 
+The following resources are created inside the modules:
 ### Networking:
 - Virtual Network
 - Subnet for the VMs
