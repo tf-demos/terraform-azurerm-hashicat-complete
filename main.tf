@@ -16,15 +16,6 @@ provider "azurerm" {
   }
 }
 
-resource "azurerm_resource_group" "myresourcegroup" {
-  name     = "${var.prefix}-demo"
-  location = var.location
-
-  tags = {
-    environment = "Production"
-  }
-}
-
 module "hashicat-networking" {
   source        = "app.terraform.io/r2-org/hashicat-networking/azurerm"
   version       = "0.0.2"
