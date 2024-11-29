@@ -16,3 +16,7 @@ variable "vault_addr" {
 variable "vault_app_token" {
   description = "Service token with the read secret policy"
 }
+
+variable "placeholder" {
+  description = "Image-as-a-service URL."
+}

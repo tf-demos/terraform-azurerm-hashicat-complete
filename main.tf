@@ -37,6 +37,7 @@ module "hashicat-compute" {
   version               = "0.0.3"
   prefix                = var.prefix
   location              = var.location
+  placeholder           = var.placeholder
   resource_group_name   = module.hashicat-networking.resource_group_name
   vm_subnet_id          = module.hashicat-networking.vm_subnet_id
   security_group_id     = module.hashicat-networking.security_group_id
