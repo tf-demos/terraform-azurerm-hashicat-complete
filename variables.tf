@@ -20,3 +20,8 @@ variable "vault_app_token" {
 variable "placeholder" {
   description = "Image-as-a-service URL."
 }
+
+variable "vm_size" {
+  description = "Specifies the size of the virtual machine."
+  default     = "Standard_B1s"
+}
