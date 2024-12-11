@@ -23,5 +23,4 @@ variable "placeholder" {
 
 variable "vm_size" {
   description = "Specifies the size of the virtual machine."
-  default     = "Standard_B1s"
 }
