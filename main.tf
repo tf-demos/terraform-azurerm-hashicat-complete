@@ -34,6 +34,7 @@ module "hashicat-compute" {
   security_group_id     = module.hashicat-networking.security_group_id
   vault_addr            = var.vault_addr
   vault_app_token       = var.vault_app_token
+  vm_size               = var.vm_size
 }
 
 module "hashicat-app-gateway" {
